@@ -65,6 +65,7 @@ class Details extends React.Component {
     ).then((response) => {
       onFetchQuery(response, query, this.props.nodeLabels, this.props.dispatch);
     }).catch((error) => {
+        console.error(error);
       this.props.dispatch({ type: ACTIONS.SET_ERROR, payload: COMMON_GREMLIN_ERROR });
     });
   }

@@ -1,9 +1,9 @@
 import { ACTIONS } from '../constants';
 
 const initialState = {
-  host: 'localhost',
+  host: '192.168.1.55',
   port: '8182',
-  query: '',
+  query: "g.V().hasLabel('artist').has('name', 'Lamia').limit(10)",
   error: null
 };
 
